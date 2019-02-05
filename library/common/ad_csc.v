@@ -62,12 +62,13 @@ module ad_csc #(
   output       [            7:0]    csc_data);
 
 
-  localparam MUL_DW = MUL_COEF_DW + 9;
+  localparam PIXEL_WD = 9; // sign extended
+  localparam MUL_DW = MUL_COEF_DW + PIXEL_WD -3; // sign extended
 
   // internal wires
 
-  reg  signed [        24:0]  data_d1;
-  reg  signed [        24:0]  data_d2;
+  reg  signed [        23:0]  data_d1;
+  reg  signed [        23:0]  data_d2;
   reg  signed [    MUL_DW:0]  data_1;
   reg  signed [    MUL_DW:0]  data_2;
   reg  signed [    MUL_DW:0]  data_3;
