@@ -106,7 +106,7 @@ set dev_package_list { \
 # transceiver speedgrade
 set xcvr_type_list { 0 9 }
 
-set fpga_voltage_list { 0 5000 } ;# min 0mV max 5mV
+set fpga_voltage_list { 0 5000 } ;# min 0mV max 5V
 
 ################################################################################
 
