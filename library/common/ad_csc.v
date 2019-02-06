@@ -63,7 +63,7 @@ module ad_csc #(
 
 
   localparam PIXEL_WD = 9; // sign extended
-  localparam MUL_DW = MUL_COEF_DW + PIXEL_WD -3; // sign extended
+  localparam MUL_DW = MUL_COEF_DW + PIXEL_WD -1;
 
   // internal wires
 
